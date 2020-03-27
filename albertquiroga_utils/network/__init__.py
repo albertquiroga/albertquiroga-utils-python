@@ -1,7 +1,7 @@
 from ipaddress import ip_address
 
-from common_utils.aws import get_ec2_address_by_name
-from common_utils.network.ConnectionParams import ConnectionParams
+from albertquiroga_utils.aws import get_ec2_address_by_name
+from albertquiroga_utils.network.ConnectionParams import ConnectionParams
 
 bastion_params = ConnectionParams(host=get_ec2_address_by_name('bertolb'), username='ec2-user')
 

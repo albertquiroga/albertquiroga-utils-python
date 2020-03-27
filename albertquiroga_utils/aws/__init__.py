@@ -6,10 +6,6 @@ import boto3
 AWS_HOSTNAME_PATTERN = r'(?:ec2|ip)-(\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}).*'
 
 ec2_client = boto3.client('ec2')
-ec2_resource = boto3.resource('ec2')
-emr_client = boto3.client('emr')
-glue_client = boto3.client('glue')
-sagemaker_client = boto3.client('sagemaker')
 
 
 def get_ec2_address_by_name(instance_name: str) -> Union[str, None]:

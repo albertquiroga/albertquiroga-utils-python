@@ -1,7 +1,7 @@
 import sys
 from argparse import Namespace, ArgumentParser
 
-from common_utils import load_user_configuration_file, CONFIG_FILE_PATH
+from albertquiroga_utils import load_user_configuration_file, CONFIG_FILE_PATH
 
 
 class CLITool:
